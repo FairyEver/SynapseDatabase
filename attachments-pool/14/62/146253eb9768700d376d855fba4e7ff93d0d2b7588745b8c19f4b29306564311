@@ -1,0 +1,36 @@
+/**
+ * @description Replace watermark to empty string
+ * @param {string} code source code
+ * @returns {string} code
+ */
+function removeTableWatermark (code) {
+  const watermarks = [
+    'Powered by Surely Vue',
+    'Invalid License',
+    'Unlicensed Product',
+    'License Expired'
+  ]
+  const watermarksRegExp = new RegExp(`"(${watermarks.join('|')})"`, 'g')
+  return code.replace(watermarksRegExp, '""')
+}
+
+function removeError (code) {
+  return code.replace(/console.error/g, '')
+}
+
+export function VitePluginSurely () {
+  let config = {}
+  return {
+    name: 'vite-plugin-surely-table-hack',
+    configResolved (resolvedConfig) {
+      config = resolvedConfig
+    },
+    transform (code, id) {
+      if (id.includes('surely-vue')) {
+        code = removeTableWatermark(code)
+        code = removeError(code)
+        return code
+      }
+    }
+  }
+}
