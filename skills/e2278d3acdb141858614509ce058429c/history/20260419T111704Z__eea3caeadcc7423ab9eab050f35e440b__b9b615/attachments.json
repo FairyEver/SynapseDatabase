@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "originalName": "code/cart.js",
+      "sha256": "ba55b382ec9dd8b3ab9a4d24039e011cc380a79f4f83e412629c132c8d16a09c",
+      "size": 983
+    },
+    {
+      "originalName": "code/inventory.js",
+      "sha256": "5525da3aeb820367f443248df72cc191bff5e4cf7ddc78237bdbbfdb2f245ed9",
+      "size": 428
+    },
+    {
+      "originalName": "vite-plugin-surely/index.js",
+      "sha256": "146253eb9768700d376d855fba4e7ff93d0d2b7588745b8c19f4b29306564311",
+      "size": 852
+    }
+  ]
+}

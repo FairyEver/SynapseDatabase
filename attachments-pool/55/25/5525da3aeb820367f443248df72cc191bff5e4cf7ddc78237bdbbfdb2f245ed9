@@ -1,0 +1,12 @@
+fetch('https://brickpark.cn/api/inventory', { method: 'GET' })
+  .then(response => response.json())
+  .then(data => {
+    const text = JSON.stringify(data, null, 2)
+    const blob = new Blob([text], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = 'data.json'
+    a.click()
+  })
+  .catch(error => console.error('Error:', error))
