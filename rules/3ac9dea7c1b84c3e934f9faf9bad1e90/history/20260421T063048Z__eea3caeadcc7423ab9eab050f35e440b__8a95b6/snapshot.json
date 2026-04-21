@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "title": "我的第一个规则",
+  "description": "介绍信息",
+  "category": "coding",
+  "icon": "file-text",
+  "iconBg": "blue",
+  "iconType": "icon",
+  "modifiedBy": "eea3caeadcc7423ab9eab050f35e440b",
+  "modifiedByDisplayName": "李杨",
+  "modifiedAt": "2026-04-21T06:30:48.198Z",
+  "deleted": false
+}
