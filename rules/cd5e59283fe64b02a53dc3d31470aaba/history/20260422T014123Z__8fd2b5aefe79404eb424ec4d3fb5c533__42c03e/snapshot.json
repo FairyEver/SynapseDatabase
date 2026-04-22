@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "title": "看看哔哩哔哩",
+  "name": "bilibili",
+  "description": "2233",
+  "category": "analysis",
+  "icon": "lightbulb",
+  "iconBg": "stone",
+  "iconType": "image",
+  "iconImage": "icon.png",
+  "modifiedBy": "8fd2b5aefe79404eb424ec4d3fb5c533",
+  "modifiedByDisplayName": "李杨",
+  "modifiedAt": "2026-04-22T01:41:23.868Z",
+  "deleted": false
+}
